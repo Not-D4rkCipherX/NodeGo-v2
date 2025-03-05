@@ -11,10 +11,23 @@ Automated bot for NodeGo platform with support for multiple accounts and proxy c
 - Account status monitoring
 - Graceful shutdown handling
 
-## Prerequisites
+## Requirements
 
 - Node.js (v16 or higher)
 - npm (Node Package Manager)
+- 
+# How to Get NodeGo Access Token
+
+1. Open your browser and login to the NOdeGo dashboard.
+2. Press `F12` to open the **Inspect Elements** panel.
+3. Go to the **Console** tab and paste the following code:
+
+   ```javascript
+   localStorage.getItem('accessToken')
+   ```
+
+4. You will receive your user ID, which looks like this: `"eyjxxxx........"`
+5. If you can't paste, type allow pasting and press Enter, then paste the line above.
 
 ## Installation
 
@@ -31,8 +44,11 @@ npm install
 
 ## Configuration
 
-1. Create `data.txt` in the project root:
-   - Add one NodeGo token per line
+1. Set Up Accounts
+    ```bash
+   nano data.txt
+   ```
+   - Now Add one NodeGo access token per line
    - Example:
      ```
      token1
@@ -40,7 +56,10 @@ npm install
      token3
      ```
 
-2. (Optional) Create `proxies.txt` in the project root:
+3. (Optional) Proxy
+ ```bash
+nano proxy.txt
+```
    - Add one proxy per line
    - Supports both HTTP and SOCKS proxies
    - Example:
