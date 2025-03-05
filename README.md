@@ -58,7 +58,7 @@ npm install
 
 3. (Optional) Proxy
  ```bash
-nano proxy.txt
+nano proxies.txt
 ```
    - Add one proxy per line
    - Supports both HTTP and SOCKS proxies
