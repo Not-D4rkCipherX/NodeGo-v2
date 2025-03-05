@@ -15,7 +15,7 @@ Automated bot for NodeGo platform with support for multiple accounts and proxy c
 
 - Node.js (v16 or higher)
 - npm (Node Package Manager)
-- 
+  
 # How to Get NodeGo Access Token
 
 1. Open your browser and login to the NOdeGo dashboard.
